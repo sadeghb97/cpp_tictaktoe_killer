@@ -36,6 +36,7 @@ class Node {
     }
 
     Node(int parentCells[], int parentFullCellsNumber, int index, int symbole) {
+        isLeaf = false;
     	fitness = -1;
         cells = new int[9];
         for(int i=0; 9>i; i++) cells[i] = parentCells[i];
